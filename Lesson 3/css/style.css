@@ -1,0 +1,31 @@
+
+.content-block  {
+    width: 350px;
+    height: 220px;
+    padding: 15px 10px 20px 10px;
+    margin-bottom: 30px;
+    border: dashed 2px 	#ff0000;
+    background-color: #008000;
+    color: #fff;
+}
+.content-float {
+    width: 50%;
+    margin-left: 10px;
+    
+}
+.content-float p {
+    text-align: justify;
+}
+.content-float .img-float_left {
+    float: left;
+    margin-right: 20px;  
+    margin-bottom: 10px;
+}
+.content-float .img-float_right {
+    width: 150px;
+    float: right;
+    margin: 20px 0 10px 20px;    
+}
+.content-clear {
+    clear:both;
+}
