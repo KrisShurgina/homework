@@ -1,0 +1,195 @@
+main {
+    padding: 40px 0 120px 40px;
+}
+.card {
+    width: 50%; 
+    background-color: #0d5825;
+    font-size: 25px;
+    color: #fff;
+    padding: 28px 55px 58px 42px;
+    margin-bottom: 30px;
+}
+.card blockquote {
+    text-align: center;
+}
+.card blockquote p {
+    padding-bottom: 5px;
+}
+.card blockquote span {
+    font-style: italic;
+}
+.card blockquote p::before {
+    content: "\201C";
+}
+.card blockquote p::after {
+    content: "\201D";
+}
+.card-images {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.card img {
+    width: 150px;
+
+}
+.card .img-card_1  {
+    transform: rotate(-20deg) translate(95px, 30px);
+    transition: all 1s linear;
+   
+    
+}
+.card .img-card_1:hover {
+    transform: rotate(-20deg) translate(95px, 10px);
+    
+}
+.card .img-card_2{
+    transform: rotate(-5deg);   
+    transition: all 1s linear;
+  
+}
+.card .img-card_2:hover {
+    transform: rotate(-5deg) translateY(-30px);
+}
+
+.card .img-card_3 {
+    transform: rotate(10deg) translate(-105px, 35px);
+     transition: all 1s linear;
+    
+   
+}
+.card .img-card_3:hover {
+    transform: rotate(10deg) translate(-105px, -5px );
+}
+
+.wrapper {
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+.square {
+    width: 80px;
+    height: 80px;
+}
+.square-pink {
+    background-color: #ff8888;
+}
+.square-blue {
+    background-color: #7e8aeb;
+    position: absolute; 
+    transform: translateX(-50%);
+    left: 50%;
+    top: 25%;
+    z-index: 2;  
+}
+.square-green {
+    background-color: #4def99;
+    position: absolute;
+    right: 2px;
+    bottom: 10px;   
+}
+.wrapper_square {
+    position: relative;
+    margin-bottom: 20px;
+}
+.wrapper_square .square {
+    width: 80px;
+    height: 80px;
+   
+}
+.square_pink {
+    background-color: #ff8888;
+}
+.square_blue {
+    background-color: #7e8aeb;
+    position: absolute; 
+    left: 45px;
+    top: 45px;   
+}
+.square_green {
+    background-color: #4def99;
+    margin-left: 90px;
+    margin-top: 15px;   
+}
+.menu-item {
+    margin: 20px 0;
+    padding-top: 10px;
+    padding-left: 25px;
+    width: 30px;
+    height: 400px;
+    background-color: #808080;
+    position: relative;
+    transition: width 1s linear;
+}
+.menu-item h3 {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 190px;
+    left: -31px;
+    white-space: nowrap;
+    color: #fff;
+    text-transform: uppercase;    
+}
+.menu-list ul {
+    display: none;
+}
+.menu-list ul li {
+    padding-top: 10px;
+}
+.menu-list ul li::before {
+    content: "\1F538";   
+}
+.menu-list ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.menu-item:hover {
+    width: 200px;
+}
+.menu-item:hover h3 {
+    left: 130px;
+    transition: opacity 2s linear;
+    opacity: 0;
+}
+.menu-item:hover ul {
+    display: block;
+}
+.menu-list ul li a:hover {
+    color: #FFA500;
+}
+.move {
+    margin: 50px 20px 70px;
+    width: 400px;
+}
+.square-move {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    animation-name: squareMove;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;    
+}
+@keyframes squareMove {
+    0% {
+        background-color:#ff0000;
+        
+    }
+    
+    25% {
+       
+          background-color: #0000ff;
+          transform: translateY(150px);
+    }
+    50% { 
+          background-color: #008000;
+          transform: translate(150px, 150px);
+    }
+    
+    75% {
+        transform: translate(150px, 0);
+        background-color: #ffff00;
+    }  
+}
