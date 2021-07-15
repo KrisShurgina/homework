@@ -1,0 +1,187 @@
+@import url(../css/reset.css);
+@import url(../css/fonts.css);
+$height: 100%;
+$font-size: 20px;
+$font-weight: 500;
+$font-weight_bolt: 700;
+$display-flex: flex;
+$text-center: center;
+html {
+    height: $height;   
+}
+body {
+    height: $height;
+    font-family: 'MuseoSansCyrl';
+}
+.flex-container {
+    height: $height;
+    display: $display-flex;
+    flex-direction: column;
+}
+header {
+    padding: 16px 3px 24px 8px;
+    display: $display-flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3b714;
+    flex: 0 1 auto;  
+
+}
+.nav-menu {
+    @media (max-width: 767px) {
+        display: none;
+    }
+  
+    ul {
+    display: $display-flex;
+        li {
+            margin-right: 14px;
+            a {
+                font-size: $font-size;
+                font-weight: $font-weight;
+                color: #000;
+                text-decoration: none;
+                &:hover {
+                    color: #6c4282;
+                    text-decoration: underline;
+                    font-weight: $font-weight_bolt;
+                }
+            }
+        }
+    }
+}
+.wrapper_content {
+    flex: 1 1 auto;
+    display: $display-flex;
+    justify-content: space-between;
+    @media (max-width: 991px) {
+        flex-direction: column;
+    }
+  
+   
+    .main-content {
+        padding: 39px 0 33px 0;
+        order: 2;
+        @media (max-width: 991px) {
+           order: 1;
+        }
+       
+       
+        p {
+            padding: 0 44px;
+            line-height: 24px;
+            text-align: $text-center;
+            font-size: $font-size;
+        }
+        h1 {
+            font-size: 30px;
+            font-weight: $font-weight_bolt;
+            text-align: $text-center;
+            margin-top: 29px;
+            text-transform: uppercase;
+        }
+        
+    }
+    .flex-container_cards {
+        display: $display-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 6px;
+
+        .card {
+            display: $display-flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 12px 18px 11px 20px;
+            min-height: 340px;
+            width: 280px;
+            margin-top: 23px;
+            margin-right: 15px;
+            border: 2px solid #808080;
+            border-radius: 15px;
+            &:hover {
+                box-shadow:
+                7px 7px #53ea93;
+                transform: translateX(-7px);
+                transition: all 0.2s linear;
+               
+                .wrapper-round {
+                    border: 10px solid #aa7bc2;
+                }
+                .button-card {
+                background-color: #6c4282;
+                transform: scale(1.2);
+            }
+            }
+           
+            .wrapper-round {
+                display: $display-flex;
+                justify-content: center;
+                align-items: center;
+                border: 10px solid #c7b7b7;
+                border-radius: 100%;
+                img {
+                    border-radius: 100%;
+                }
+            }
+            h3 {
+                font-size: $font-size;
+                font-weight: $font-weight_bolt;
+                text-align: $text-center;
+                margin-top: 16px;
+            }
+            .descr {
+                margin-top: 20px;
+                margin-bottom: 13px;
+                text-align: $text-center;
+            }
+            .button-card {
+                width: 50px;
+                height: 30px;
+                margin-top: auto;
+                background-color: #685174;
+                border-radius: 10px;
+                text-align: $text-center;
+                color: #fff;
+                font-weight: $font-weight_bolt;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .sidebar-left, .sidebar-right {
+        padding-top: 14px;
+        text-align: $text-center;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        flex: 1 0 210px;
+    }
+    .sidebar-left {
+        background-color: #c798b9;  
+        order: 1;
+        @media (max-width: 991px) {
+            order: 2;
+            line-height: 210px;
+         }   
+    }
+    
+    .sidebar-right {
+        background-color: #9cb1c7;
+        order: 3;
+        @media (max-width: 991px) {
+          line-height: 210px;
+        }
+    }
+}
+footer {
+    background-color: #82e682;
+    padding: 16px 0 8px 0;
+    flex: 0 1 auto;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-align: $text-center;
+    @media (max-width: 1991px) {
+       padding-bottom: 13px;
+    }
+}

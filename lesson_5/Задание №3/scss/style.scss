@@ -1,0 +1,42 @@
+@import url(../css/reset.css);
+.holder {
+    margin: 10px;
+    width: 390px;
+    height: 103px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid #000;
+    border-radius: 15px 15px 0 0 ;
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+    }
+    & :first-child {
+        border-radius: 13px 0 0 0 ;
+        background-color: #fd644d;
+        flex: 1 0 50%; 
+    }
+    & :nth-child(2) {
+        background-color: #4983b2;
+        order: 4;
+        flex-grow: 1;
+    }
+    & :nth-child(3) {
+        background-color: #663797;
+        order: 2;
+        flex-grow: 1;
+    }
+    & :nth-child(4) {
+        background-color: #0e7f12;
+        order: 5;
+        flex-grow: 1;
+    }
+    & :nth-child(5) {
+        background-color: #fda429;
+        border-radius: 0 12px 0 0 ;
+        order: 1;
+        flex: 1 0 50%;
+    }
+}
