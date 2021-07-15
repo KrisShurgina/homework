@@ -1,0 +1,37 @@
+blockquote {
+    color: #008000;
+}
+.list li a[href^="https://"] {
+    color: #f00;
+}
+.list :nth-child(4) {
+    background-color: #008000;
+}
+.list + p {
+    font-size: 26px;
+}
+.text-box h3:first-child {
+    color: #ffc0cb;
+}
+#greycol {
+    color: #808080 ;
+}
+.text-box :nth-child(5) {
+    color: #f00;
+}
+.text-box :nth-child(7) {
+    color: #008000;
+}
+.text-box .yellow {
+    color: #ffff00;
+}
+.bg-box {
+    width: 500px;
+    height: 300px;
+    background-image: url(../images/dom.jpg), url(../images/grass.png),
+    url(../images/lamp.png), url(../images/Ёжик.png), url(../images/donut.png); 
+    background-repeat: no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
+    background-position: center, bottom, top, left, right;
+    background-size: 50%, 25%, 5%, 5%, 5%;
+    background-color: #008000;
+}
