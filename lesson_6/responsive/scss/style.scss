@@ -300,6 +300,7 @@ header {
             line-height: 115px;
         }
         @media (max-width: 575px) {
+            flex: 1 0 auto;
             font-size: 18px;
         }
     }
