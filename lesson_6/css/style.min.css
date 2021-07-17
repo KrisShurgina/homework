@@ -484,10 +484,8 @@ header .nav .menu__hamburger {
 
 @media (max-width: 575px) {
   .wrapper_content .sidebar-left, .wrapper_content .sidebar-right {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
     font-size: 18px;
+    line-height: 0;
   }
 }
 
@@ -517,8 +515,9 @@ footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  background-color: #82e682;
   height: 80px;
+  background-color: #b353ea;
+  color: #fff;
   padding: 16px 0 8px 0;
   font-size: 22px;
   font-weight: 500;

@@ -300,8 +300,8 @@ header {
             line-height: 115px;
         }
         @media (max-width: 575px) {
-            flex: 1 0 auto;
             font-size: 18px;
+            line-height: 0;
         }
     }
     .sidebar-left {
@@ -318,8 +318,9 @@ header {
 }
 footer {
     flex: 0 1 auto;
-    background-color: #82e682;
     height: 80px;
+    background-color: #b353ea;
+    color: #fff;
     padding: 16px 0 8px 0;
     font-size: $font-size;
     font-weight: $font-weight;
