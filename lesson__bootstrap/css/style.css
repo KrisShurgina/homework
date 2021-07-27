@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    font-family: 'MuseoSansCyrl';
+}
+header {
+   height: 80px;
+}
+header .navbar-brand img {
+    width: 150px;
+}
+header .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+header .navbar-nav .nav-item .nav-link:hover {
+    color: #6c4282;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+main {
+    padding: 39px 0 33px 0;
+}
+main .descr {
+    padding: 0 44px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 22px;
+}
+main h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 29px;
+    text-transform: uppercase;
+}
+.card-mt {
+    margin-top: 23px;
+}
+.card {
+    padding: 12px 18px 11px 20px;
+}
+.card:hover {
+    box-shadow: 7px 7px #53ea93;
+    transform: translateX(-7px);
+    transition: all 0.2s linear;
+}
+.card .wrapper-round {
+    border: 10px solid #c7b7b7;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+}
+.card .wrapper-round:hover {
+    border: 10px solid #aa7bc2;
+}
+.card .wrapper-round .card-img-top {
+    border-radius: 100%;
+}
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card .card-body .card-title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 16px;
+}
+.card .card-body .card-text {
+    margin-top: 20px;
+    margin-bottom: 13px;
+    text-align: center;
+}
+.card .card-footer {
+    margin-top: auto;
+    padding: 0;
+    background-color: transparent;
+    border-top: none;
+    align-self: flex-end;
+}
+.card .card-footer .btn {
+    width: 50px;
+    height: 30px;
+    background-color: #685174;
+    border-radius: 10px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.card .card-footer .btn:hover {
+    background-color: #6c4282;
+    transform: scale(1.2);
+}
+.aside_1, .aside_2 {
+    padding-top: 14px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    min-height: 150px;
+}
+
+footer {
+    height: 80px;
+    line-height: 40px;
+    padding: 16px 0 8px 0;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
